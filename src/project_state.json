@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Comprehensive stock market education website organized by difficulty levels (Beginner, Intermediate, Advanced) with interactive learning tools, searchable glossary, tutorials, visual diagrams, and quick reference guides covering stock basics, chart reading, investment strategies, risk management, and market terminology",
+  "architectural_notes": [
+    "React-based frontend with Tailwind CSS for styling",
+    "Responsive design for accessibility across all devices",
+    "Content organized by three difficulty tiers: Beginner, Intermediate, Advanced",
+    "Interactive learning components including searchable glossary and tutorials"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Professional hero banner image showing financial charts and growth concepts for the homepage (hero-banner.dim_1200x400.png)\n- Icon illustration representing beginner level with simple upward trend (beginner-icon.dim_128x128.png)\n- Icon illustration representing intermediate level with multiple chart lines (intermediate-icon.dim_128x128.png)\n- Icon illustration representing advanced level with complex analytical graphics (advanced-icon.dim_128x128.png)\n- Diagram showing bull and bear market patterns (bull-bear-diagram.dim_800x400.png)\n- Visual chart showing candlestick pattern examples (candlestick-patterns.dim_600x400.png)\n- Infographic illustrating portfolio diversification concept (diversification-infographic.dim_800x600.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-homepage-with-clear-navigation-to-three-main-difficulty-level-sections-beginner-intermediate-and-advanced",
+      "title": "Create a homepage with clear navigation to three main difficulty level sections: Beginner, Intermediate, and Advanced",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-beginner-section-with-foundational-stock-market-content-including-what-stocks-are-basic-terminology-how-stock-markets-work-and-getting-started-with-investing",
+      "title": "Build Beginner section with foundational stock market content including: what stocks are, basic terminology, how stock markets work, and getting started with investing",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-intermediate-section-with-content-on-chart-reading-technical-analysis-basics-fundamental-analysis-trading-strategies-and-portfolio-management",
+      "title": "Build Intermediate section with content on chart reading, technical analysis basics, fundamental analysis, trading strategies, and portfolio management",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-advanced-section-with-content-on-advanced-trading-strategies-risk-management-techniques-options-and-derivatives-market-psychology-and-sophisticated-analysis-methods",
+      "title": "Build Advanced section with content on advanced trading strategies, risk management techniques, options and derivatives, market psychology, and sophisticated analysis methods",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-searchable-glossary-of-stock-market-terms-accessible-from-all-pages-with-clear-definitions-and-examples-for-each-term",
+      "title": "Create a searchable glossary of stock market terms accessible from all pages, with clear definitions and examples for each term",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-step-by-step-tutorials-and-lessons-throughout-each-difficulty-level-section-with-clear-progression-from-one-concept-to-the-next",
+      "title": "Implement step-by-step tutorials and lessons throughout each difficulty level section, with clear progression from one concept to the next",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-visual-examples-and-diagrams-throughout-the-content-to-illustrate-stock-market-concepts-including-chart-patterns-market-trends-and-investment-strategies",
+      "title": "Add visual examples and diagrams throughout the content to illustrate stock market concepts, including chart patterns, market trends, and investment strategies",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-quick-reference-guides-and-cheat-sheets-that-summarize-key-concepts-formulas-and-strategies-for-easy-access",
+      "title": "Create quick reference guides and cheat sheets that summarize key concepts, formulas, and strategies for easy access",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-professional-visual-theme-that-conveys-trust-and-financial-expertise-while-remaining-approachable-for-beginners-using-a-sophisticated-color-palette-with-clean-typography-and-well-structured-layouts",
+      "title": "Design a cohesive, professional visual theme that conveys trust and financial expertise while remaining approachable for beginners, using a sophisticated color palette with clean typography and well-structured layouts",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Educational content organized by difficulty levels (Beginner, Intermediate, Advanced)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Searchable glossary of stock market terms",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Step-by-step tutorials and lessons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Visual examples and diagrams for stock concepts",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Quick reference guides and cheat sheets",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Stock Market Learning Platform",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

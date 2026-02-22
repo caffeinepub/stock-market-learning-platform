@@ -1,0 +1,192 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-homepage-with-clear-navigation-to-three-main-difficulty-level-sections-beginner-intermediate-and-advanced",
+      "featureTitle": "Create a homepage with clear navigation to three main difficulty level sections: Beginner, Intermediate, and Advanced",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/layout/Footer.tsx",
+        "frontend/src/components/layout/Header.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-beginner-section-with-foundational-stock-market-content-including-what-stocks-are-basic-terminology-how-stock-markets-work-and-getting-started-with-investing",
+      "featureTitle": "Build Beginner section with foundational stock market content including: what stocks are, basic terminology, how stock markets work, and getting started with investing",
+      "files": [
+        "frontend/src/components/education/LessonCard.tsx",
+        "frontend/src/data/beginnerContent.ts",
+        "frontend/src/pages/BeginnerPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-intermediate-section-with-content-on-chart-reading-technical-analysis-basics-fundamental-analysis-trading-strategies-and-portfolio-management",
+      "featureTitle": "Build Intermediate section with content on chart reading, technical analysis basics, fundamental analysis, trading strategies, and portfolio management",
+      "files": [
+        "frontend/src/data/intermediateContent.ts",
+        "frontend/src/pages/IntermediatePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-advanced-section-with-content-on-advanced-trading-strategies-risk-management-techniques-options-and-derivatives-market-psychology-and-sophisticated-analysis-methods",
+      "featureTitle": "Build Advanced section with content on advanced trading strategies, risk management techniques, options and derivatives, market psychology, and sophisticated analysis methods",
+      "files": [
+        "frontend/src/data/advancedContent.ts",
+        "frontend/src/pages/AdvancedPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-searchable-glossary-of-stock-market-terms-accessible-from-all-pages-with-clear-definitions-and-examples-for-each-term",
+      "featureTitle": "Create a searchable glossary of stock market terms accessible from all pages, with clear definitions and examples for each term",
+      "files": [
+        "frontend/src/components/glossary/TermCard.tsx",
+        "frontend/src/data/glossaryTerms.ts",
+        "frontend/src/pages/GlossaryPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-step-by-step-tutorials-and-lessons-throughout-each-difficulty-level-section-with-clear-progression-from-one-concept-to-the-next",
+      "featureTitle": "Implement step-by-step tutorials and lessons throughout each difficulty level section, with clear progression from one concept to the next",
+      "files": [
+        "frontend/src/components/education/Tutorial.tsx",
+        "frontend/src/data/advancedContent.ts",
+        "frontend/src/data/beginnerContent.ts",
+        "frontend/src/data/intermediateContent.ts",
+        "frontend/src/pages/AdvancedPage.tsx",
+        "frontend/src/pages/BeginnerPage.tsx",
+        "frontend/src/pages/IntermediatePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-visual-examples-and-diagrams-throughout-the-content-to-illustrate-stock-market-concepts-including-chart-patterns-market-trends-and-investment-strategies",
+      "featureTitle": "Add visual examples and diagrams throughout the content to illustrate stock market concepts, including chart patterns, market trends, and investment strategies",
+      "files": [
+        "frontend/src/components/education/DiagramDisplay.tsx",
+        "frontend/src/components/education/LessonCard.tsx",
+        "frontend/src/data/beginnerContent.ts",
+        "frontend/src/data/intermediateContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-quick-reference-guides-and-cheat-sheets-that-summarize-key-concepts-formulas-and-strategies-for-easy-access",
+      "featureTitle": "Create quick reference guides and cheat sheets that summarize key concepts, formulas, and strategies for easy access",
+      "files": [
+        "frontend/src/components/reference/QuickReferenceCard.tsx",
+        "frontend/src/data/quickReferences.ts",
+        "frontend/src/pages/AdvancedPage.tsx",
+        "frontend/src/pages/BeginnerPage.tsx",
+        "frontend/src/pages/IntermediatePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-cohesive-professional-visual-theme-that-conveys-trust-and-financial-expertise-while-remaining-approachable-for-beginners-using-a-sophisticated-color-palette-with-clean-typography-and-well-structured-layouts",
+      "featureTitle": "Design a cohesive, professional visual theme that conveys trust and financial expertise while remaining approachable for beginners, using a sophisticated color palette with clean typography and well-structured layouts",
+      "files": [
+        "frontend/src/components/layout/Footer.tsx",
+        "frontend/src/components/layout/Header.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

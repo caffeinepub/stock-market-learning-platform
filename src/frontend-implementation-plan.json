@@ -1,0 +1,278 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Stock Market Academy - Frontend Implementation Plan",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create homepage with clear navigation to Beginner, Intermediate, and Advanced difficulty level sections",
+      "acceptanceCriteria": [
+        "Homepage displays three clear sections or navigation options for Beginner, Intermediate, and Advanced levels",
+        "Navigation is intuitive and accessible on all device sizes",
+        "Users can easily identify which section matches their experience level"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "create",
+          "description": "Create homepage component with hero section using generated hero-banner image (frontend/public/assets/generated/hero-banner.dim_1200x400.png), three difficulty level navigation cards with icons (beginner-icon.dim_128x128.png, intermediate-icon.dim_128x128.png, advanced-icon.dim_128x128.png), clear descriptions for each level, and responsive grid layout. Include routing links to each difficulty level section."
+        },
+        {
+          "path": "frontend/src/components/layout/Header.tsx",
+          "operation": "create",
+          "description": "Create header component with site branding 'Stock Market Academy', main navigation menu with links to Beginner, Intermediate, Advanced sections and Glossary, responsive mobile menu with hamburger icon, and consistent styling across all pages."
+        },
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "create",
+          "description": "Create footer component with navigation links, copyright information, and responsive design matching the site theme."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Configure React Router with routes for homepage (/), beginner section (/beginner), intermediate section (/intermediate), advanced section (/advanced), and glossary (/glossary). Wrap all routes with Header and Footer layout components."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build Beginner section with foundational stock market content including stock basics, terminology, market mechanics, and getting started guidance",
+      "acceptanceCriteria": [
+        "Beginner section contains educational content on stock fundamentals",
+        "Content is written in simple, accessible language for complete beginners",
+        "Topics include stock definitions, basic market concepts, and introductory investing principles"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/BeginnerPage.tsx",
+          "operation": "create",
+          "description": "Create beginner level page with section header displaying beginner-icon.dim_128x128.png, introduction explaining this section is for complete beginners, organized content modules covering: what stocks are, basic terminology, how stock markets work, stock exchanges, buying and selling basics, getting started with investing, and risk awareness. Include bull-bear-diagram.dim_800x400.png from frontend/public/assets/generated/ to illustrate market patterns. Use card-based layout for each topic with clear headings and beginner-friendly explanations."
+        },
+        {
+          "path": "frontend/src/components/education/LessonCard.tsx",
+          "operation": "create",
+          "description": "Create reusable lesson card component accepting title, description, content, optional image, and difficulty level props. Style with shadcn/ui Card component for consistent presentation across all difficulty levels."
+        },
+        {
+          "path": "frontend/src/data/beginnerContent.ts",
+          "operation": "create",
+          "description": "Create data file containing structured beginner-level educational content including lesson titles, descriptions, detailed explanations for stock fundamentals, basic terminology definitions, market mechanics, and getting started guidance. Export as typed array for consumption by BeginnerPage component."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Build Intermediate section with content on chart reading, technical analysis, fundamental analysis, trading strategies, and portfolio management",
+      "acceptanceCriteria": [
+        "Intermediate section contains content on chart reading and analysis techniques",
+        "Content covers trading strategies and portfolio management concepts",
+        "Material assumes basic stock market knowledge and builds upon it"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/IntermediatePage.tsx",
+          "operation": "create",
+          "description": "Create intermediate level page with section header displaying intermediate-icon.dim_128x128.png, introduction for intermediate investors, organized content modules covering: chart reading fundamentals, technical analysis basics, fundamental analysis principles, common trading strategies, portfolio management concepts, and diversification. Include candlestick-patterns.dim_600x400.png and diversification-infographic.dim_800x600.png from frontend/public/assets/generated/ to illustrate concepts. Use LessonCard component for consistent presentation."
+        },
+        {
+          "path": "frontend/src/data/intermediateContent.ts",
+          "operation": "create",
+          "description": "Create data file containing structured intermediate-level educational content including lessons on chart reading, technical indicators, fundamental analysis methods, trading strategy explanations, and portfolio management principles. Export as typed array for consumption by IntermediatePage component."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build Advanced section with content on advanced trading strategies, risk management, options and derivatives, market psychology, and sophisticated analysis methods",
+      "acceptanceCriteria": [
+        "Advanced section contains sophisticated investment and trading content",
+        "Content includes risk management strategies and complex financial instruments",
+        "Material is suitable for experienced investors seeking to deepen their knowledge"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/AdvancedPage.tsx",
+          "operation": "create",
+          "description": "Create advanced level page with section header displaying advanced-icon.dim_128x128.png, introduction for experienced investors, organized content modules covering: advanced trading strategies, sophisticated risk management techniques, options trading, derivatives, market psychology, advanced technical analysis, quantitative methods, and complex portfolio strategies. Use LessonCard component for consistent presentation."
+        },
+        {
+          "path": "frontend/src/data/advancedContent.ts",
+          "operation": "create",
+          "description": "Create data file containing structured advanced-level educational content including complex trading strategies, risk management frameworks, options and derivatives explanations, market psychology insights, and sophisticated analysis methodologies. Export as typed array for consumption by AdvancedPage component."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create searchable glossary of stock market terms with definitions and examples, accessible from all pages",
+      "acceptanceCriteria": [
+        "Glossary includes comprehensive stock market terminology",
+        "Search functionality allows users to quickly find term definitions",
+        "Each term includes a clear definition and practical example",
+        "Glossary is accessible from any page via navigation"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/GlossaryPage.tsx",
+          "operation": "create",
+          "description": "Create glossary page with search input using shadcn/ui Input component, filterable alphabetical list of stock market terms, expandable term cards showing definition and practical example for each term, and responsive layout. Implement client-side search filtering across term names and definitions."
+        },
+        {
+          "path": "frontend/src/data/glossaryTerms.ts",
+          "operation": "create",
+          "description": "Create comprehensive data file containing stock market terms with structure including term name, definition, practical example, and related terms. Include terms across all difficulty levels covering stocks, bonds, indices, trading concepts, analysis methods, and financial instruments. Export as typed array for consumption by GlossaryPage component."
+        },
+        {
+          "path": "frontend/src/components/glossary/TermCard.tsx",
+          "operation": "create",
+          "description": "Create reusable term card component using shadcn/ui Accordion or Card component, accepting term name, definition, example, and optional related terms. Include expand/collapse functionality for better UX when browsing multiple terms."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Implement step-by-step tutorials and lessons with clear progression throughout each difficulty level section",
+      "acceptanceCriteria": [
+        "Each difficulty level contains structured tutorials with step-by-step instructions",
+        "Tutorials flow logically from basic to more complex concepts within each level",
+        "Each tutorial clearly indicates prerequisites and learning objectives"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/education/Tutorial.tsx",
+          "operation": "create",
+          "description": "Create tutorial component with numbered steps, progress indicator, prerequisites section, learning objectives list, step-by-step instructions with clear headings, and navigation between steps. Use shadcn/ui components for consistent styling and interaction patterns."
+        },
+        {
+          "path": "frontend/src/data/beginnerContent.ts",
+          "operation": "modify",
+          "description": "Enhance beginner content data structure to include tutorial objects with step-by-step instructions, prerequisites, learning objectives, and logical ordering for progressive learning from foundational to more complex beginner concepts."
+        },
+        {
+          "path": "frontend/src/data/intermediateContent.ts",
+          "operation": "modify",
+          "description": "Enhance intermediate content data structure to include tutorial objects with step-by-step instructions, prerequisites, learning objectives, and logical ordering showing progression from intermediate foundations to more sophisticated concepts."
+        },
+        {
+          "path": "frontend/src/data/advancedContent.ts",
+          "operation": "modify",
+          "description": "Enhance advanced content data structure to include tutorial objects with step-by-step instructions, prerequisites, learning objectives, and logical ordering demonstrating progression through complex advanced topics."
+        },
+        {
+          "path": "frontend/src/pages/BeginnerPage.tsx",
+          "operation": "modify",
+          "description": "Integrate Tutorial component to render step-by-step lessons within the beginner section, showing clear progression indicators and learning path through beginner content."
+        },
+        {
+          "path": "frontend/src/pages/IntermediatePage.tsx",
+          "operation": "modify",
+          "description": "Integrate Tutorial component to render step-by-step lessons within the intermediate section, showing clear progression indicators and learning path through intermediate content."
+        },
+        {
+          "path": "frontend/src/pages/AdvancedPage.tsx",
+          "operation": "modify",
+          "description": "Integrate Tutorial component to render step-by-step lessons within the advanced section, showing clear progression indicators and learning path through advanced content."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add visual examples and diagrams throughout content to illustrate stock market concepts including chart patterns, market trends, and investment strategies",
+      "acceptanceCriteria": [
+        "Educational content includes relevant visual diagrams and examples",
+        "Visuals effectively illustrate complex stock market concepts",
+        "Images and diagrams are responsive and display properly on all devices"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/education/DiagramDisplay.tsx",
+          "operation": "create",
+          "description": "Create diagram display component for rendering educational images with responsive sizing, optional captions, zoom functionality, and alt text for accessibility. Accept image path, caption, and size props."
+        },
+        {
+          "path": "frontend/src/data/beginnerContent.ts",
+          "operation": "modify",
+          "description": "Add references to generated diagram images in beginner lessons, specifically bull-bear-diagram.dim_800x400.png from frontend/public/assets/generated/ to illustrate market patterns and trends. Include image metadata with captions and alt text."
+        },
+        {
+          "path": "frontend/src/data/intermediateContent.ts",
+          "operation": "modify",
+          "description": "Add references to generated diagram images in intermediate lessons, specifically candlestick-patterns.dim_600x400.png and diversification-infographic.dim_800x600.png from frontend/public/assets/generated/ to illustrate chart reading and portfolio concepts. Include image metadata with captions and alt text."
+        },
+        {
+          "path": "frontend/src/components/education/LessonCard.tsx",
+          "operation": "modify",
+          "description": "Integrate DiagramDisplay component into LessonCard to render associated diagrams and visual examples within lesson content, ensuring responsive layout and proper image sizing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Create quick reference guides and cheat sheets summarizing key concepts, formulas, and strategies for easy access",
+      "acceptanceCriteria": [
+        "Quick reference section provides concise summaries of key stock market concepts",
+        "Cheat sheets include important formulas, definitions, and strategies",
+        "Reference materials are easily accessible and downloadable or printable"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/reference/QuickReferenceCard.tsx",
+          "operation": "create",
+          "description": "Create quick reference card component displaying concise summaries of key concepts, formulas, or strategies. Use shadcn/ui Card component with print-friendly styling, downloadable/printable layout, and organized sections for easy scanning."
+        },
+        {
+          "path": "frontend/src/data/quickReferences.ts",
+          "operation": "create",
+          "description": "Create data file containing quick reference content including key stock market concepts summary, important formulas with explanations, common trading strategies overview, risk management checklists, and analysis method summaries. Organize by difficulty level and topic. Export as typed array."
+        },
+        {
+          "path": "frontend/src/pages/BeginnerPage.tsx",
+          "operation": "modify",
+          "description": "Add quick reference section at the end of beginner page displaying relevant beginner-level cheat sheets using QuickReferenceCard component. Include print button functionality."
+        },
+        {
+          "path": "frontend/src/pages/IntermediatePage.tsx",
+          "operation": "modify",
+          "description": "Add quick reference section at the end of intermediate page displaying relevant intermediate-level cheat sheets using QuickReferenceCard component. Include print button functionality."
+        },
+        {
+          "path": "frontend/src/pages/AdvancedPage.tsx",
+          "operation": "modify",
+          "description": "Add quick reference section at the end of advanced page displaying relevant advanced-level cheat sheets using QuickReferenceCard component. Include print button functionality."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Design cohesive, professional visual theme conveying trust and financial expertise while remaining approachable, using sophisticated color palette with clean typography and structured layouts",
+      "acceptanceCriteria": [
+        "Visual design uses a professional color scheme appropriate for financial education",
+        "Typography is clear and readable across all content sections",
+        "Layout maintains consistency across all difficulty levels and pages",
+        "Design balances professionalism with approachability for all user levels"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define global CSS custom properties for a professional financial theme with sophisticated color palette (deep blues, greens for growth, neutral grays), establish typography scale using clear, readable fonts, set consistent spacing and layout variables, and ensure professional yet approachable styling foundation. Include print-friendly media queries for reference materials."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind configuration with custom financial education theme colors (primary blues, accent greens, neutral backgrounds), typography settings for readability, custom spacing scale for consistent layouts, and responsive breakpoints. Ensure theme supports both professional financial aesthetic and approachable learning environment."
+        },
+        {
+          "path": "frontend/src/components/layout/Header.tsx",
+          "operation": "modify",
+          "description": "Apply consistent professional styling using theme colors and typography, ensuring header maintains trust-building visual design with clean layout and clear navigation hierarchy."
+        },
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "modify",
+          "description": "Apply consistent professional styling using theme colors and typography, ensuring footer complements overall design with clean, structured layout."
+        }
+      ]
+    }
+  ]
+}

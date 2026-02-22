@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* Financial theme - Professional blues and greens */
+        --background: 0.98 0 0;
+        --foreground: 0.15 0 0;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.15 0 0;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0 0;
+        
+        /* Primary - Deep professional blue */
+        --primary: 0.45 0.15 250;
+        --primary-foreground: 0.98 0 0;
+        
+        /* Secondary - Neutral gray */
+        --secondary: 0.92 0 0;
+        --secondary-foreground: 0.15 0 0;
+        
+        --muted: 0.95 0 0;
+        --muted-foreground: 0.50 0 0;
+        
+        --accent: 0.94 0 0;
+        --accent-foreground: 0.15 0 0;
+        
+        /* Success - Financial growth green */
+        --success: 0.55 0.18 145;
+        
+        /* Destructive - Warning red */
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0 0;
+        
+        --border: 0.90 0 0;
+        --input: 0.90 0 0;
+        --ring: 0.45 0.15 250;
+        
+        /* Chart colors - Professional palette */
+        --chart-1: 0.55 0.18 145;
+        --chart-2: 0.45 0.15 250;
+        --chart-3: 0.60 0.20 200;
+        --chart-4: 0.50 0.16 280;
+        --chart-5: 0.65 0.15 180;
+    }
+
+    .dark {
+        --background: 0.12 0 0;
+        --foreground: 0.95 0 0;
+        
+        --card: 0.15 0 0;
+        --card-foreground: 0.95 0 0;
+        
+        --popover: 0.15 0 0;
+        --popover-foreground: 0.95 0 0;
+        
+        /* Primary - Bright blue for dark mode */
+        --primary: 0.65 0.20 240;
+        --primary-foreground: 0.12 0 0;
+        
+        --secondary: 0.20 0 0;
+        --secondary-foreground: 0.95 0 0;
+        
+        --muted: 0.18 0 0;
+        --muted-foreground: 0.60 0 0;
+        
+        --accent: 0.22 0 0;
+        --accent-foreground: 0.95 0 0;
+        
+        /* Success - Vibrant green for dark mode */
+        --success: 0.65 0.20 145;
+        
+        --destructive: 0.60 0.24 25;
+        --destructive-foreground: 0.12 0 0;
+        
+        --border: 0.25 0 0;
+        --input: 0.25 0 0;
+        --ring: 0.65 0.20 240;
+        
+        --chart-1: 0.65 0.20 145;
+        --chart-2: 0.65 0.20 240;
+        --chart-3: 0.70 0.22 200;
+        --chart-4: 0.60 0.18 280;
+        --chart-5: 0.70 0.18 180;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    /* Print styles for quick reference guides */
+    @media print {
+        header, footer, .print\:hidden {
+            display: none !important;
+        }
+        
+        body {
+            background: white;
+            color: black;
+        }
+        
+        .print\:shadow-none {
+            box-shadow: none !important;
+        }
+    }
+}
+
+/* Background grid pattern for hero section */
+.bg-grid-pattern {
+    background-image: linear-gradient(to right, oklch(var(--border)) 1px, transparent 1px),
+                      linear-gradient(to bottom, oklch(var(--border)) 1px, transparent 1px);
+    background-size: 40px 40px;
+}

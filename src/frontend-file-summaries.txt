@@ -1,0 +1,23 @@
+{
+  "frontend/src/App.tsx": "Main application component configuring TanStack Router with routes for home, beginner, intermediate, advanced, and glossary pages, all wrapped in a shared layout.",
+  "frontend/src/components/layout/Layout.tsx": "Layout wrapper component that renders the header, main content area with router outlet, and footer for consistent page structure.",
+  "frontend/src/components/layout/Header.tsx": "Sticky header component with site branding, desktop navigation menu, and mobile responsive sheet menu for accessing all main sections.",
+  "frontend/src/components/layout/Footer.tsx": "Footer component with site information, quick links, disclaimer, and attribution including dynamic year and caffeine.ai link with UTM parameters.",
+  "frontend/src/pages/HomePage.tsx": "Homepage featuring hero section with gradient banner, three difficulty level cards with icons and descriptions, and features overview section.",
+  "frontend/src/pages/BeginnerPage.tsx": "Beginner level page with tabbed interface for lessons and tutorials, now filtering lessons to only show items with content property before passing to LessonCard.",
+  "frontend/src/pages/IntermediatePage.tsx": "Intermediate level page with tabbed lessons and tutorials, now filtering lessons to only show items with content property before passing to LessonCard.",
+  "frontend/src/pages/AdvancedPage.tsx": "Advanced level page featuring sophisticated content on trading strategies, now filtering lessons to only show items with content property before passing to LessonCard.",
+  "frontend/src/pages/GlossaryPage.tsx": "Searchable glossary page with real-time filtering, alphabetically grouped terms, and expandable cards showing definitions, examples, and related terms.",
+  "frontend/src/components/education/LessonCard.tsx": "Reusable card component for displaying educational lessons with title, description, content, optional diagram, and difficulty badge (unchanged from original).",
+  "frontend/src/components/education/Tutorial.tsx": "Tutorial component displaying step-by-step instructions with prerequisites, learning objectives, and numbered steps for progressive learning.",
+  "frontend/src/components/education/DiagramDisplay.tsx": "Image display component with zoom functionality via dialog modal, showing educational diagrams with optional captions.",
+  "frontend/src/components/reference/QuickReferenceCard.tsx": "Card component for displaying quick reference guides with print functionality, showing key concepts and formulas in organized format.",
+  "frontend/src/components/glossary/TermCard.tsx": "Accordion-based card component for glossary terms showing definition, practical example, and related terms with expandable content.",
+  "frontend/src/data/beginnerContent.ts": "Comprehensive data file containing beginner-level lessons and tutorials with ContentItem interface updated to make content property optional for tutorial-type items that use steps instead.",
+  "frontend/src/data/intermediateContent.ts": "Data file with intermediate-level content including chart reading, technical analysis, fundamental analysis, portfolio diversification, and trading strategies with visual references.",
+  "frontend/src/data/advancedContent.ts": "Advanced-level educational content covering sophisticated trading strategies, options, risk management, market psychology, quantitative analysis, and derivatives.",
+  "frontend/src/data/glossaryTerms.ts": "Complete glossary database with 30+ stock market terms including definitions, practical examples, and related term references for comprehensive learning.",
+  "frontend/src/data/quickReferences.ts": "Quick reference guides organized by difficulty level, providing cheat sheets for key concepts, formulas, strategies, and portfolio allocation guidelines.",
+  "frontend/src/index.css": "Global styles with professional financial theme using OKLCH colors (deep blues, growth greens), custom CSS variables for light/dark modes, and print-friendly media queries.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with financial education color palette, Inter font family, custom success color, and professional design tokens."
+}

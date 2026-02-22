@@ -1,0 +1,213 @@
+{
+  "kind": "build_request",
+  "title": "Create comprehensive stock market education website with difficulty-based organization",
+  "projectName": "Stock Market Academy",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a homepage with clear navigation to three main difficulty level sections: Beginner, Intermediate, and Advanced",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3",
+          "msg-4"
+        ],
+        "quotes": [
+          "the content should be organized by difficulty level",
+          "organized by difficulty levels (Beginner, Intermediate, Advanced)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Homepage displays three clear sections or navigation options for Beginner, Intermediate, and Advanced levels",
+        "Navigation is intuitive and accessible on all device sizes",
+        "Users can easily identify which section matches their experience level"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build Beginner section with foundational stock market content including: what stocks are, basic terminology, how stock markets work, and getting started with investing",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4"
+        ],
+        "quotes": [
+          "stock basics",
+          "Complete beginners"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Beginner section contains educational content on stock fundamentals",
+        "Content is written in simple, accessible language for complete beginners",
+        "Topics include stock definitions, basic market concepts, and introductory investing principles"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build Intermediate section with content on chart reading, technical analysis basics, fundamental analysis, trading strategies, and portfolio management",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4"
+        ],
+        "quotes": [
+          "chart reading, investment strategies",
+          "intermediate investors"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Intermediate section contains content on chart reading and analysis techniques",
+        "Content covers trading strategies and portfolio management concepts",
+        "Material assumes basic stock market knowledge and builds upon it"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build Advanced section with content on advanced trading strategies, risk management techniques, options and derivatives, market psychology, and sophisticated analysis methods",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4"
+        ],
+        "quotes": [
+          "risk management",
+          "advanced"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Advanced section contains sophisticated investment and trading content",
+        "Content includes risk management strategies and complex financial instruments",
+        "Material is suitable for experienced investors seeking to deepen their knowledge"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a searchable glossary of stock market terms accessible from all pages, with clear definitions and examples for each term",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4"
+        ],
+        "quotes": [
+          "Searchable glossary of stock market terms",
+          "market terminology"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Glossary includes comprehensive stock market terminology",
+        "Search functionality allows users to quickly find term definitions",
+        "Each term includes a clear definition and practical example",
+        "Glossary is accessible from any page via navigation"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Implement step-by-step tutorials and lessons throughout each difficulty level section, with clear progression from one concept to the next",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4"
+        ],
+        "quotes": [
+          "Step-by-step tutorials or lessons",
+          "step-by-step tutorials"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each difficulty level contains structured tutorials with step-by-step instructions",
+        "Tutorials flow logically from basic to more complex concepts within each level",
+        "Each tutorial clearly indicates prerequisites and learning objectives"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add visual examples and diagrams throughout the content to illustrate stock market concepts, including chart patterns, market trends, and investment strategies",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4"
+        ],
+        "quotes": [
+          "Visual examples and diagrams",
+          "visual diagrams and examples"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Educational content includes relevant visual diagrams and examples",
+        "Visuals effectively illustrate complex stock market concepts",
+        "Images and diagrams are responsive and display properly on all devices"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create quick reference guides and cheat sheets that summarize key concepts, formulas, and strategies for easy access",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4"
+        ],
+        "quotes": [
+          "Quick reference guides or cheat sheets",
+          "quick reference guides"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Quick reference section provides concise summaries of key stock market concepts",
+        "Cheat sheets include important formulas, definitions, and strategies",
+        "Reference materials are easily accessible and downloadable or printable"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Design a cohesive, professional visual theme that conveys trust and financial expertise while remaining approachable for beginners, using a sophisticated color palette with clean typography and well-structured layouts",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "clean, professional look",
+          "accessible interface"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Visual design uses a professional color scheme appropriate for financial education",
+        "Typography is clear and readable across all content sections",
+        "Layout maintains consistency across all difficulty levels and pages",
+        "Design balances professionalism with approachability for all user levels"
+      ]
+    }
+  ],
+  "constraints": [
+    "All content must be organized by the three difficulty levels: Beginner, Intermediate, and Advanced",
+    "Website must be responsive and work seamlessly on all devices",
+    "Navigation must remain intuitive and accessible for users of all experience levels"
+  ],
+  "nonGoals": [
+    "Real-time stock price data or live market feeds",
+    "User accounts or personalized learning paths",
+    "Interactive trading simulations or practice accounts",
+    "Financial advice or personalized investment recommendations",
+    "Integration with external brokerage platforms"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Professional hero banner image showing financial charts and growth concepts for the homepage (hero-banner.dim_1200x400.png)",
+      "Icon illustration representing beginner level with simple upward trend (beginner-icon.dim_128x128.png)",
+      "Icon illustration representing intermediate level with multiple chart lines (intermediate-icon.dim_128x128.png)",
+      "Icon illustration representing advanced level with complex analytical graphics (advanced-icon.dim_128x128.png)",
+      "Diagram showing bull and bear market patterns (bull-bear-diagram.dim_800x400.png)",
+      "Visual chart showing candlestick pattern examples (candlestick-patterns.dim_600x400.png)",
+      "Infographic illustrating portfolio diversification concept (diversification-infographic.dim_800x600.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T16:30:19.452Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 9,
+    "implemented": 9,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Create a homepage with clear navigation to three main difficulty level sections: Beginner, Intermediate, and Advanced",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/components/layout/Header.tsx",
+          "frontend/src/components/layout/Footer.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/components/layout/Header.tsx",
+          "frontend/src/components/layout/Footer.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Build Beginner section with foundational stock market content including: what stocks are, basic terminology, how stock markets work, and getting started with investing",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/BeginnerPage.tsx",
+          "frontend/src/components/education/LessonCard.tsx",
+          "frontend/src/data/beginnerContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/BeginnerPage.tsx",
+          "frontend/src/components/education/LessonCard.tsx",
+          "frontend/src/data/beginnerContent.ts"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Build Intermediate section with content on chart reading, technical analysis basics, fundamental analysis, trading strategies, and portfolio management",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/IntermediatePage.tsx",
+          "frontend/src/data/intermediateContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/IntermediatePage.tsx",
+          "frontend/src/data/intermediateContent.ts"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Build Advanced section with content on advanced trading strategies, risk management techniques, options and derivatives, market psychology, and sophisticated analysis methods",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/AdvancedPage.tsx",
+          "frontend/src/data/advancedContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/AdvancedPage.tsx",
+          "frontend/src/data/advancedContent.ts"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Create a searchable glossary of stock market terms accessible from all pages, with clear definitions and examples for each term",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/GlossaryPage.tsx",
+          "frontend/src/data/glossaryTerms.ts",
+          "frontend/src/components/glossary/TermCard.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/GlossaryPage.tsx",
+          "frontend/src/data/glossaryTerms.ts",
+          "frontend/src/components/glossary/TermCard.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Implement step-by-step tutorials and lessons throughout each difficulty level section, with clear progression from one concept to the next",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/education/Tutorial.tsx",
+          "frontend/src/data/beginnerContent.ts",
+          "frontend/src/data/intermediateContent.ts",
+          "frontend/src/data/advancedContent.ts",
+          "frontend/src/pages/BeginnerPage.tsx",
+          "frontend/src/pages/IntermediatePage.tsx",
+          "frontend/src/pages/AdvancedPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/education/Tutorial.tsx",
+          "frontend/src/data/beginnerContent.ts",
+          "frontend/src/data/intermediateContent.ts",
+          "frontend/src/data/advancedContent.ts",
+          "frontend/src/pages/BeginnerPage.tsx",
+          "frontend/src/pages/IntermediatePage.tsx",
+          "frontend/src/pages/AdvancedPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Add visual examples and diagrams throughout the content to illustrate stock market concepts, including chart patterns, market trends, and investment strategies",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/education/DiagramDisplay.tsx",
+          "frontend/src/data/beginnerContent.ts",
+          "frontend/src/data/intermediateContent.ts",
+          "frontend/src/components/education/LessonCard.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/education/DiagramDisplay.tsx",
+          "frontend/src/data/beginnerContent.ts",
+          "frontend/src/data/intermediateContent.ts",
+          "frontend/src/components/education/LessonCard.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Create quick reference guides and cheat sheets that summarize key concepts, formulas, and strategies for easy access",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/reference/QuickReferenceCard.tsx",
+          "frontend/src/data/quickReferences.ts",
+          "frontend/src/pages/BeginnerPage.tsx",
+          "frontend/src/pages/IntermediatePage.tsx",
+          "frontend/src/pages/AdvancedPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/reference/QuickReferenceCard.tsx",
+          "frontend/src/data/quickReferences.ts",
+          "frontend/src/pages/BeginnerPage.tsx",
+          "frontend/src/pages/IntermediatePage.tsx",
+          "frontend/src/pages/AdvancedPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Design a cohesive, professional visual theme that conveys trust and financial expertise while remaining approachable for beginners, using a sophisticated color palette with clean typography and well-structured layouts",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/layout/Header.tsx",
+          "frontend/src/components/layout/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/layout/Header.tsx",
+          "frontend/src/components/layout/Footer.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/advanced-icon.dim_128x128.png",
+    "frontend/public/assets/generated/beginner-icon.dim_128x128.png",
+    "frontend/public/assets/generated/bull-bear-diagram.dim_800x400.png",
+    "frontend/public/assets/generated/candlestick-patterns.dim_600x400.png",
+    "frontend/public/assets/generated/diversification-infographic.dim_800x600.png",
+    "frontend/public/assets/generated/hero-banner.dim_1200x400.png",
+    "frontend/public/assets/generated/intermediate-icon.dim_128x128.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/education/DiagramDisplay.tsx",
+    "frontend/src/components/education/LessonCard.tsx",
+    "frontend/src/components/education/Tutorial.tsx",
+    "frontend/src/components/glossary/TermCard.tsx",
+    "frontend/src/components/layout/Footer.tsx",
+    "frontend/src/components/layout/Header.tsx",
+    "frontend/src/components/layout/Layout.tsx",
+    "frontend/src/components/reference/QuickReferenceCard.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/data/advancedContent.ts",
+    "frontend/src/data/beginnerContent.ts",
+    "frontend/src/data/glossaryTerms.ts",
+    "frontend/src/data/intermediateContent.ts",
+    "frontend/src/data/quickReferences.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AdvancedPage.tsx",
+    "frontend/src/pages/BeginnerPage.tsx",
+    "frontend/src/pages/GlossaryPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/IntermediatePage.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
